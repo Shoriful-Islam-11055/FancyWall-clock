@@ -11,16 +11,7 @@ setInterval(function(){
 
     sec.style.transform =`rotate(${s}deg)`
     mint.style.transform =`rotate(${m}deg)` 
-    hr.style.transform =`rotate(${h}deg)`
-   
-    // let secondHand = document.getElementById("sec");
-    // secondHand.style.transform ="rotate("+seconds*6+"deg)";
-
-    // let minuteHand = document.getElementById("mint");
-    // minuteHand.style.transform ="rotate("+minutes*6+"deg)";
-
-    // let hourHand = document.getElementById("hr");
-    // hourHand.style.transform ="rotate("+hours*30+"deg)";
+    hr.style.transform =`rotate(${h}deg)` 
 
 }, 1000);
 
