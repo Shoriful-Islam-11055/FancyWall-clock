@@ -4,8 +4,8 @@ setInterval(function(){
     let minutes = date.getMinutes();
     let seconds = date.getSeconds(); 
 
-    let h = (hours * 96) + (minutes / 2);
-    let m = (minutes * (-30)) + (0.1 * seconds);
+    let h = (hours * 30) + (minutes / 2);
+    let m = (minutes * 6) + (0.1 * seconds);
     let s = (seconds * 6);
 
     hr.style.transform =`rotate(${h}deg)`
