@@ -40,7 +40,7 @@ body{
     left: 50%;
     transform-origin: left;
     transform: translateY(-50%);
-    /* transform: rotate(35deg);   */
+    transform: rotate(-90deg);  
 }
 .minute{
     width: 100px;
@@ -51,7 +51,7 @@ body{
     left: 50%;
     transform: translateY(-50%);
     transform-origin: left;
-    /* transform: rotate(-30deg);   */
+    /* transform: rotate(-90deg);  */
 }
 .second{
     width: 95px;
@@ -62,5 +62,5 @@ body{
     left: 50%;
     transform-origin: left;
     transform: translateY(-50%);
-    /* transform: rotate(-90deg);    */
+    transform: rotate(-90deg); 
 }
