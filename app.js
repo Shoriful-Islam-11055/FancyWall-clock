@@ -1,16 +1,25 @@
 setInterval(function(){
     let date = new Date();
-    let hour = date.getHours();
-    let minute = date.getMinutes();
-    let second = date.getSeconds(); 
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds(); 
 
-    let secondHand = document.getElementById("sec");
-    secondHand.style.transform ="rotate("+second*6+"deg)";
+    let h = (56*hours) + (minutes/2);
+    let m = 4.5*minutes;
+    let s = 6*seconds;
 
-    let minuteHand = document.getElementById("mint");
-    minuteHand.style.transform ="rotate("+minute*6+"deg)";
+    hr.style.transform =`rotate(${h}deg)`
+    mint.style.transform =`rotate(${m}deg)`
+    sec.style.transform =`rotate(${s}deg)`
 
-    let hourHand = document.getElementById("hr");
-    hourHand.style.transform ="rotate("+hour*30+"deg)";
+    // let secondHand = document.getElementById("sec");
+    // secondHand.style.transform ="rotate("+seconds*6+"deg)";
+
+    // let minuteHand = document.getElementById("mint");
+    // minuteHand.style.transform ="rotate("+minutes*6+"deg)";
+
+    // let hourHand = document.getElementById("hr");
+    // hourHand.style.transform ="rotate("+hours*30+"deg)";
+
 }, 1000);
 
