@@ -1,12 +1,12 @@
 setInterval(function(){
     let date = new Date();
-    let hours = date.getHours();
+    let hours = date.getHours() % 12; //0 -23
     let minutes = date.getMinutes();
     let seconds = date.getSeconds(); 
 
-    let h = (56*hours) + (minutes/2);
-    let m = 4.5*minutes;
-    let s = 6*seconds;
+    let h = (hours * 96) + (minutes / 2);
+    let m = (minutes * (-30)) + (0.1 * seconds);
+    let s = (seconds * 6);
 
     hr.style.transform =`rotate(${h}deg)`
     mint.style.transform =`rotate(${m}deg)`
