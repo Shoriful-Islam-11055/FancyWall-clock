@@ -6,7 +6,7 @@ setInterval(function(){
    
     let h = (hours * 30) + (minutes / 2)+(-90);
     let m = (minutes * 6) +(-90)
-    let s = (seconds * 6);
+    let s = (seconds * 6)+(-90);
     
 
     sec.style.transform =`rotate(${s}deg)`
